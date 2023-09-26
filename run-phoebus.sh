@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Phoebus build and installation location
-TOP=/opt/epics-tools
+TOP="$PWD"
 
 export JAVA_HOME=$TOP/lib/jvm/jdk-11.0.2
 export PATH="$JAVA_HOME/bin:$PATH"
@@ -11,12 +11,12 @@ V="4.7.2"
 
 # figure out the path to the product jar
 if [[ -z "${PHOEBUS_JAR}" ]]; then
-  PHOEBUS_JAR=${TOP}/scorpius-phoebus/products/target/scorpius-product-${V}.jar
+  PHOEBUS_JAR=${TOP}/products/target/scorpius-product-${V}.jar
 fi
 
 # figure out the path to the configuration settings
 if [[ -z "${PHOEBUS_CONFIG}" ]]; then
-  PHOEBUS_CONFIG=${TOP}/scorpius-phoebus/config/settings.ini
+  PHOEBUS_CONFIG=${TOP}/config/settings.ini
 fi
 
 # To get one instance, use server mode
