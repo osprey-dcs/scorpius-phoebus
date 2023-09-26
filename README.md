@@ -7,7 +7,22 @@ It also consists of settings and configuration needed to run cs-studio effective
 
 ### Download prebuilt binaries
 
+Download pre built binaries from github
+https://github.com/osprey-dcs/scorpius-phoebus/releases
 
+```
+export PHOEBUS_JAR=/path/to/downloaded/scorpius-product-${V}.jar
+export PHOEBUS_CONFIG=/path/to/scropius/config/settings.ini
+
+JDK_JAVA_OPTIONS=" -DCA_DISABLE_REPEATER=true"
+JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS -Dnashorn.args=--no-deprecation-warning"
+JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS -Djdk.gtk.verbose=false -Djdk.gtk.version=2 -Dprism.forceGPU=true"
+JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS -Dlogback.configurationFile=/home/train/epics-tools/setup/settings/logback.xml"
+JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS -Dorg.csstudio.javafx.rtplot.update_counter=false"
+export JDK_JAVA_OPTIONS
+
+java -jar $PHOEBUS_JAR -settings $PHOEBUS_CONFIG -logging $TOP/config/logging.properties "$@" &
+```
 
 ### Build and Install scorpius Phoebus
 
