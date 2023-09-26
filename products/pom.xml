@@ -5,7 +5,7 @@
   <groupId>org.phoebus</groupId>
   <version>4.7.2</version>
   <artifactId>scorpius-product</artifactId>
-  <name>scorpius phoebus accl product</name>
+  <name>scorpius phoebus product</name>
 
 <dependencies>
     <dependency>
