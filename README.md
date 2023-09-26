@@ -4,6 +4,8 @@ scorpius phoebus product
 A set of install and build scripts to setup scorpius-phoebus product on the scorpius controls/internal n/w.  
 It also consists of settings and configuration needed to run cs-studio effectively on the scorpius n/w.  
 
+## Requirements
+ - [JDK11 or later](https://adoptium.net/en-GB/temurin/archive/?version=11).
 
 ### Run prebuilt binaries
 
