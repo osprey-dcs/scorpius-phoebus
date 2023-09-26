@@ -2,7 +2,7 @@
 
 # Build phoebus and scorpius product
 
-export TOP="$PWD"
+export TOP=/opt/epics-tools
 
 # Download third party tools and services needed for the epics tools and services
 mkdir -p ${TOP}/lib/jvm
