@@ -7,9 +7,9 @@ It also consists of settings and configuration needed to run cs-studio effective
 
 ### Download prebuilt binaries
 
-Download pre built binaries from github
-https://github.com/osprey-dcs/scorpius-phoebus/releases
-
+Download pre built binaries:
+[scorpius-phoebus releases
+](https://drive.google.com/drive/folders/12zAMoY7rBmo_g8HbxOrgjggVEn7HkDCN?usp=sharing)
 ```
 export PHOEBUS_JAR=/path/to/downloaded/scorpius-product-${V}.jar
 export PHOEBUS_CONFIG=/path/to/scropius/config/settings.ini
