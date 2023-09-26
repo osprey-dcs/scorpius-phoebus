@@ -11,7 +11,7 @@ Download pre built binaries:
 [scorpius-phoebus releases
 ](https://drive.google.com/drive/folders/12zAMoY7rBmo_g8HbxOrgjggVEn7HkDCN?usp=sharing)
 ```
-export PHOEBUS_JAR=/path/to/downloaded/scorpius-product-${V}.jar
+export PHOEBUS_JAR=/path/to/downloaded/scorpius-product-4.7.2.jar
 export PHOEBUS_CONFIG=/path/to/scropius/config/settings.ini
 
 JDK_JAVA_OPTIONS=" -DCA_DISABLE_REPEATER=true"
