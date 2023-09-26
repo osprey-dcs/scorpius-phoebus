@@ -47,6 +47,9 @@ cd $TOP/lib/phoebus
 # Build the documentation and help
 mvn verify --settings=$TOP/config/settings.xml -P sphinx -N
 
+# Build the common phoebus binaries
+#mvn install --settings=$TOP/config/settings.xml -DskipTests=true
+
 # Build scorpius product products
 cd $TOP/products
 mvn clean install --settings=$TOP/config/settings.xml -DskipTests=true -Ddocs=$TOP/lib/phoebus/docs
