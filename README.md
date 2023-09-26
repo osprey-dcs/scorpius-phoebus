@@ -5,7 +5,7 @@ A set of install and build scripts to setup scorpius-phoebus product on the scor
 It also consists of settings and configuration needed to run cs-studio effectively on the scorpius n/w.  
 
 
-### Download prebuilt binaries
+### Run prebuilt binaries
 
 Download pre built binaries:
 [scorpius-phoebus releases
@@ -36,7 +36,7 @@ git clone https://github.com/osprey-dcs/scorpius-phoebus
 ```
 
 
-### Run scorpius Phoebus
+#### Run scorpius Phoebus
 
 ```
 ./run-phoebus
